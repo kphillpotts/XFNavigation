@@ -5,6 +5,7 @@ using System.Text;
 
 using Xamarin.Forms;
 using XFNavigation.Data;
+using XFNavigation.Views.PushPop;
 
 namespace XFNavigation
 {
@@ -12,8 +13,10 @@ namespace XFNavigation
     {
         public App()
         {
+            MainPage = new NavigationPage(new MyPage(1));
+
             // The root page of your application
-            MainPage = new Views.BucketItemDetail(BucketFactory.BucketList.First());
+          //  MainPage = new Views.BucketItemDetail(BucketFactory.BucketList.First());
 
             //MainPage = new ContentPage
             //{
