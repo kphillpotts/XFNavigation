@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 
-namespace NavigationPatterns
+namespace XFNavigation.Data
 {
     public static class BucketFactory
     {

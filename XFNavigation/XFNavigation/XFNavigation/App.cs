@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
+using XFNavigation.Data;
 
 namespace XFNavigation
 {
@@ -12,19 +13,21 @@ namespace XFNavigation
         public App()
         {
             // The root page of your application
-            MainPage = new ContentPage
-            {
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-						new Label {
-							XAlign = TextAlignment.Center,
-							Text = "Welcome to Forms!"
-						}
-					}
-                }
-            };
+            MainPage = new Views.BucketItemDetail(BucketFactory.BucketList.First());
+
+            //MainPage = new ContentPage
+            //{
+            //    Content = new StackLayout
+            //    {
+            //        VerticalOptions = LayoutOptions.Center,
+            //        Children = {
+            //            new Label {
+            //                XAlign = TextAlignment.Center,
+            //                Text = "Welcome to Forms!"
+            //            }
+            //        }
+            //    }
+            //};
         }
 
         protected override void OnStart()

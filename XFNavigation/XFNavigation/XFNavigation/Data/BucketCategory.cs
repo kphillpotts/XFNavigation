@@ -1,8 +1,4 @@
-﻿using System;
-using System.Reflection;
-
-
-namespace NavigationPatterns
+﻿namespace XFNavigation.Data
 {
         public enum BucketCategory
         {

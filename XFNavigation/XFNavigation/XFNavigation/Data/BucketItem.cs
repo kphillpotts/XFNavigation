@@ -1,8 +1,7 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace NavigationPatterns
+namespace XFNavigation.Data
 {
     public class BucketItem : INotifyPropertyChanged
     {

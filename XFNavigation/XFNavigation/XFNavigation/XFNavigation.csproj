@@ -35,10 +35,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Converters\BirthdayConverter.cs" />
+    <Compile Include="Converters\CategoryToIndexConverter.cs" />
+    <Compile Include="Converters\ImageResourceConverter.cs" />
     <Compile Include="Data\BucketCategory.cs" />
     <Compile Include="Data\BucketFactory.cs" />
     <Compile Include="Data\BucketItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\BucketItemDetail.xaml.cs">
+      <DependentUpon>BucketItemDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ColourPage.xaml.cs">
+      <DependentUpon>ColourPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
@@ -55,10 +64,24 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\BungyJumping.png" />
-    <Content Include="Images\David.png" />
-    <Content Include="Images\Japan.png" />
-    <Content Include="Images\moon.png" />
+    <EmbeddedResource Include="Images\BungyJumping.png" />
+    <EmbeddedResource Include="Images\David.png" />
+    <EmbeddedResource Include="Images\Japan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\moon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\BucketItemDetail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ColourPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.1.4.2.6359\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.1.4.2.6359\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
