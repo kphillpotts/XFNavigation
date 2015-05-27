@@ -42,7 +42,7 @@
     <Compile Include="Data\BucketFactory.cs" />
     <Compile Include="Data\BucketItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\BucketItemDetail.xaml.cs">
+    <Compile Include="Views\BucketList\BucketItemDetail.xaml.cs">
       <DependentUpon>BucketItemDetail.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ColourPage.xaml.cs">
@@ -80,7 +80,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\BucketItemDetail.xaml">
+    <EmbeddedResource Include="Views\BucketList\BucketItemDetail.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
