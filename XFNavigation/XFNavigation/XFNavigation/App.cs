@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
@@ -13,24 +14,50 @@ namespace XFNavigation
     {
         public App()
         {
-            MainPage = new NavigationPage(new MyPage(1));
+            #region Simple Page Navigation Sample
+            //MainPage = new NavigationPage(new PushPage(1));
+            #endregion
 
-            // The root page of your application
-          //  MainPage = new Views.BucketItemDetail(BucketFactory.BucketList.First());
+            #region ListViews with Navigation
+            //MainPage = new NavigationPage(BucketItemList);
+            #endregion
+        }
 
-            //MainPage = new ContentPage
-            //{
-            //    Content = new StackLayout
-            //    {
-            //        VerticalOptions = LayoutOptions.Center,
-            //        Children = {
-            //            new Label {
-            //                XAlign = TextAlignment.Center,
-            //                Text = "Welcome to Forms!"
-            //            }
-            //        }
-            //    }
-            //};
+        void Current_ModalPopping(object sender, ModalPoppingEventArgs e)
+        {
+            Debug.WriteLine("Page popped {0}", e.Modal.Title);
+            //throw new NotImplementedException();
+        }
+
+        void navPage_Popped(object sender, NavigationEventArgs e)
+        {
+            Debug.WriteLine("Page popped {0}", e.Page.Title);
+        }
+
+        void navPage_Pushed(object sender, NavigationEventArgs e)
+        {
+            Debug.WriteLine("Page popped {0}", e.Page.Title);
+        }
+
+        void App_ModalPopping(object sender, ModalPoppingEventArgs e)
+        {
+            
+            //throw new NotImplementedException();
+        }
+
+        void App_ModalPushing(object sender, ModalPushingEventArgs e)
+        {
+            //throw new NotImplementedException();
+        }
+
+        void App_ModalPushed(object sender, ModalPushedEventArgs e)
+        {
+            //throw new NotImplementedException();
+        }
+
+        void App_ModalPopped(object sender, ModalPoppedEventArgs e)
+        {
+            //throw new NotImplementedException();
         }
 
         protected override void OnStart()

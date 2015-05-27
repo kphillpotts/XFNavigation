@@ -1,23 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace XFNavigation.Views.PushPop
 {
-    public partial class MyPage : ContentPage
+    public partial class PushPage : ContentPage
     {
         private int _pageNumber;
 
-        public MyPage(int pageNumber)
+        public PushPage(int pageNumber)
         {
             InitializeComponent();
             _pageNumber = pageNumber;
-            this.Title = string.Format("Page {0}", _pageNumber);
+            Title = string.Format("Page {0}", _pageNumber);
+            PageTitleLabel.Text = Title;
         }
 
         public int PageNumber
@@ -28,22 +23,22 @@ namespace XFNavigation.Views.PushPop
 
         private void PushPageButton_OnClicked(object sender, EventArgs e)
         {
-            this.Navigation.PushAsync(new MyPage(_pageNumber + 1));
+            Navigation.PushAsync(new PushPage(_pageNumber + 1));
         }
 
         private void PopPageButton_OnClicked(object sender, EventArgs e)
         {
-            this.Navigation.PopAsync();
+            Navigation.PopAsync();
         }
 
         private void PopToRootButton_OnClicked(object sender, EventArgs e)
         {
-            this.Navigation.PopToRootAsync();
+            Navigation.PopToRootAsync();
         }
 
         private void PushModalToolbarButton_OnClicked(object sender, EventArgs e)
         {
-            this.Navigation.PushModalAsync(new ModalPage());
+            Navigation.PushModalAsync(new ModalPage());
         }
     }
 }
