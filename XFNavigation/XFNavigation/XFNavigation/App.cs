@@ -16,20 +16,21 @@ namespace XFNavigation
         public App()
         {
             #region Simple Page Navigation Sample
-            
             //MainPage = new NavigationPage(new PushPage(1));
-            
             #endregion
 
             #region ListViews with Navigation
-            
-            MainPage = new NavigationPage(new BucketListPage());
-
+            //MainPage = new NavigationPage(new BucketListPage());
             #endregion
 
             #region Tabbed Pages (with navigation)
-            MainPage = new BucketListTabbedContainer();
+            //MainPage = new BucketListTabbedContainer();
             #endregion
+
+            #region Carousel Page
+            MainPage = new BucketCarouselContainer();
+            #endregion
+
         }
 
         void Current_ModalPopping(object sender, ModalPoppingEventArgs e)
