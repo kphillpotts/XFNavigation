@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage x:Class="XFNavigation.Views.BucketItemDetail"
-             xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:converters="clr-namespace:XFNavigation.Converters;assembly=XFNavigation"
-             xmlns:local="clr-namespace:XFNavigation;assembly=XFNavigation"
-             xmlns:xfNavigation="clr-namespace:XFNavigation;assembly=XFNavigation"
-             Title="Bucket Item Details">
+<ContentPage x:Class="XFNavigation.Views.BucketItemDetail" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:XFNavigation.Converters;assembly=XFNavigation" xmlns:local="clr-namespace:XFNavigation;assembly=XFNavigation"
+             xmlns:xfNavigation="clr-namespace:XFNavigation;assembly=XFNavigation" Title="Bucket Item Details">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -17,15 +13,10 @@
     <ScrollView>
         <StackLayout Spacing="10">
             <StackLayout.Padding>
-                <OnPlatform Android="5,0,5,5"
-                            WinPhone="5,0,5,5"
-                            iOS="0"
-                            x:TypeArguments="Thickness" />
+                <OnPlatform Android="5,0,5,5" WinPhone="5,0,5,5" iOS="0" x:TypeArguments="Thickness" />
             </StackLayout.Padding>
 
-            <Image Aspect="AspectFill"
-                   HeightRequest="200"
-                   Source="{Binding BucketImageUrl, Converter={StaticResource ImageResourceCvt}}" />
+            <Image Aspect="AspectFill" HeightRequest="200" Source="{Binding BucketImageUrl, Converter={StaticResource ImageResourceCvt}}" />
 
             <Label Font="Bold" Text="Name" />
             <Entry Text="{Binding Name, Mode=TwoWay}" />

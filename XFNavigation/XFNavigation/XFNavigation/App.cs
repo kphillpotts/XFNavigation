@@ -6,6 +6,7 @@ using System.Text;
 
 using Xamarin.Forms;
 using XFNavigation.Data;
+using XFNavigation.Views.BucketList;
 using XFNavigation.Views.PushPop;
 
 namespace XFNavigation
@@ -15,11 +16,15 @@ namespace XFNavigation
         public App()
         {
             #region Simple Page Navigation Sample
+            
             //MainPage = new NavigationPage(new PushPage(1));
+            
             #endregion
 
             #region ListViews with Navigation
-            //MainPage = new NavigationPage(BucketItemList);
+            
+            MainPage = new NavigationPage(new BucketListPage());
+
             #endregion
         }
 

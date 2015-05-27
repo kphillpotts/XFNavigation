@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="XFNavigation.Views.BucketList.BucketListPage" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:XFNavigation.Converters;assembly=XFNavigation" xmlns:local="clr-namespace:XFNavigation;assembly=XFNavigation" Title="Bucket List" Padding="5">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ImageResourceConverter x:Key="ImageResourceCvt" />
+            <converters:BirthdayConverter x:Key="birthdayCvt" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ListView x:Name="BucketListView" IsPullToRefreshEnabled="true" ItemTapped="OnItemTapped" ItemsSource="{Binding .}" RowHeight="80">
+        <!--  ItemSelected="OnItemSelected">  -->
+
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <ViewCell.ContextActions>
+                        <MenuItem Clicked="OnMore" CommandParameter="{Binding .}" Text="Completed" />
+                        <MenuItem Clicked="OnDelete" CommandParameter="{Binding .}" IsDestructive="True" Text="Delete" />
+                    </ViewCell.ContextActions>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="75" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <!--<controls:CircleImage WidthRequest="75" HeightRequest="75" Aspect="AspectFill"
+                             VerticalOptions="Center"
+                             Source="{Binding BucketImageUrl, Converter={StaticResource imageResourceCvt}}" />-->
+                        <Image Aspect="AspectFill" HeightRequest="75" Source="{Binding BucketImageUrl, Converter={StaticResource ImageResourceCvt}}" VerticalOptions="Center" WidthRequest="75" />
+
+                        <StackLayout Grid.Column="1" VerticalOptions="CenterAndExpand">
+                            <Label FontAttributes="Bold" FontSize="Medium" Text="{Binding Name}" />
+                            <!--                            <Label Text="{Binding Description}" FontSize="Small" TextColor="Accent" />-->
+                        </StackLayout>
+
+                        <Image Grid.Column="2" HorizontalOptions="End" IsVisible="{Binding Done}" Source="star.png" VerticalOptions="Center" />
+
+                        <!--                        <Label Text="{Binding Category, Converter={StaticResource birthdayCvt}, StringFormat='{0} yrs. old'}"
+                                HorizontalOptions="End" VerticalOptions="End"
+                                Grid.Column="1" Grid.ColumnSpan="2"
+                                FontSize="Micro" TextColor="Accent" />-->
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+</ContentPage>
+
+

@@ -45,6 +45,9 @@
     <Compile Include="Views\BucketList\BucketItemDetail.xaml.cs">
       <DependentUpon>BucketItemDetail.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\BucketList\BucketListPage.xaml.cs">
+      <DependentUpon>BucketListPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ColourPage.xaml.cs">
       <DependentUpon>ColourPage.xaml</DependentUpon>
     </Compile>
@@ -98,6 +101,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Views\PushPop\PushPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\BucketList\BucketListPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
