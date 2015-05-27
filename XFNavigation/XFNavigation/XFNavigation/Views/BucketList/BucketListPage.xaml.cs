@@ -14,7 +14,6 @@ namespace XFNavigation.Views.BucketList
             InitializeComponent();
 
             this.Title = "All";
-            //items = BucketFactory.BucketList;
             BindingContext = BucketFactory.BucketList;
         }
 
@@ -30,13 +29,27 @@ namespace XFNavigation.Views.BucketList
         {
             InitializeComponent();
 
-            this.Title = "By Category";
-            //items = BucketFactory.BucketList.Where(c => c.Category == category);
+            this.Title = GetCategoryTitle(category);
 
             BindingContext = BucketFactory.BucketList.Where(c => c.Category == category);
         }
 
-
+        private string GetCategoryTitle(BucketCategory category)
+        {
+            switch (category)
+            {
+                case BucketCategory.ThingsToDo:
+                    return "Things To Do";
+                case BucketCategory.PlacesToVisit:
+                    return "Places To Visit";
+                case BucketCategory.BooksToRead:
+                    return "Books To Read";
+                case BucketCategory.MoviesToSee:
+                    return "Movies To See";
+                default:
+                    return "By Category";
+            }
+        }
 
 
         async void OnItemTapped(object sender, ItemTappedEventArgs e)

@@ -26,6 +26,10 @@ namespace XFNavigation
             MainPage = new NavigationPage(new BucketListPage());
 
             #endregion
+
+            #region Tabbed Pages (with navigation)
+            MainPage = new BucketListTabbedContainer();
+            #endregion
         }
 
         void Current_ModalPopping(object sender, ModalPoppingEventArgs e)

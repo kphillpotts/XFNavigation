@@ -48,6 +48,9 @@
     <Compile Include="Views\BucketList\BucketListPage.xaml.cs">
       <DependentUpon>BucketListPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\BucketList\BucketListTabbedContainer.xaml.cs">
+      <DependentUpon>BucketListTabbedContainer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ColourPage.xaml.cs">
       <DependentUpon>ColourPage.xaml</DependentUpon>
     </Compile>
@@ -106,6 +109,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\BucketList\BucketListPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\BucketList\BucketListTabbedContainer.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
