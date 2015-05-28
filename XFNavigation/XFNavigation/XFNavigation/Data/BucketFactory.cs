@@ -4,9 +4,6 @@ namespace XFNavigation.Data
 {
     public static class BucketFactory
     {
-        
-        public static ObservableCollection<BucketItem> BucketList { get; private set; }
-
         static BucketFactory()
         {
             BucketList = new ObservableCollection<BucketItem>
@@ -17,6 +14,22 @@ namespace XFNavigation.Data
                     BucketImageUrl = "David.png",
                     Description = "Dinner with David Attenborough",
                     Category = BucketCategory.ThingsToDo,
+                    Done = false
+                },
+                new BucketItem
+                {
+                    Name = "Go Bungy Jumping",
+                    BucketImageUrl = "BungyJumping.png",
+                    Description = "Because gravity sucks!",
+                    Category = BucketCategory.ThingsToDo,
+                    Done = false
+                },
+                new BucketItem
+                {
+                    Name = "Visit Japan",
+                    BucketImageUrl = "Japan.png",
+                    Description = "Because it's a wacky place",
+                    Category = BucketCategory.PlacesToVisit,
                     Done = false
                 },
                 new BucketItem
@@ -41,6 +54,7 @@ namespace XFNavigation.Data
 //                },
 //            }
         }
+
+        public static ObservableCollection<BucketItem> BucketList { get; private set; }
     }
 }
-

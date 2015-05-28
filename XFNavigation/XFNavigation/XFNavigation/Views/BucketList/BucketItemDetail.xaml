@@ -16,8 +16,9 @@
                 <OnPlatform Android="5,0,5,5" WinPhone="5,0,5,5" iOS="0" x:TypeArguments="Thickness" />
             </StackLayout.Padding>
 
-            <Image Aspect="AspectFill" HeightRequest="200" Source="{Binding BucketImageUrl, Converter={StaticResource ImageResourceCvt}}" />
+            <Image Aspect="AspectFill"  Source="{Binding BucketImageUrl, Converter={StaticResource ImageResourceCvt}}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
 
+          <StackLayout Padding="10" Spacing="5">
             <Label Font="Bold" Text="Name" />
             <Entry Text="{Binding Name, Mode=TwoWay}" />
 
@@ -39,7 +40,7 @@
 
             <Label Font="Bold" Text="Done" />
             <Switch IsToggled="{Binding Done, Mode=TwoWay}" />
-
+          </StackLayout>
         </StackLayout>
     </ScrollView>
 </ContentPage>
