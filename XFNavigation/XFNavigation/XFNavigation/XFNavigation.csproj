@@ -52,6 +52,7 @@
       <DependentUpon>BucketListTabbedContainer.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\BucketList\BucketCarouselContainer.cs" />
+    <Compile Include="Views\BucketList\TabbedPageWithCarousel.cs" />
     <Compile Include="Views\ColourPage.xaml.cs">
       <DependentUpon>ColourPage.xaml</DependentUpon>
     </Compile>

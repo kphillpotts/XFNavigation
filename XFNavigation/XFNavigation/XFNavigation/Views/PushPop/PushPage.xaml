@@ -2,7 +2,7 @@
 <ContentPage x:Class="XFNavigation.Views.PushPop.PushPage" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Name="Modal" x:Name="PopModalToolbarButton" Clicked="PushModalToolbarButton_OnClicked" Order="Primary" Priority="0" />
+      <ToolbarItem Name="Modal" x:Name="PopModalToolbarButton" Clicked="PushModalToolbarButton_OnClicked" Order="Primary" Priority="0" />
     </ContentPage.ToolbarItems>
 
     <StackLayout Orientation="Vertical" Padding="10" Spacing="10" VerticalOptions="Center">

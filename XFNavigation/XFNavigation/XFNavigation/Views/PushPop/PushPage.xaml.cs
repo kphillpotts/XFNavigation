@@ -13,6 +13,10 @@ namespace XFNavigation.Views.PushPop
             _pageNumber = pageNumber;
             Title = string.Format("Page {0}", _pageNumber);
             PageTitleLabel.Text = Title;
+
+            //// change background colour depending on page number
+            //var delta = 255 - (_pageNumber*5);
+            //this.BackgroundColor = Color.FromRgb(delta, delta, delta);
         }
 
         public int PageNumber

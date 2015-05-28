@@ -1,7 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage x:Class="XFNavigation.Views.PushPop.ModalPage" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" BackgroundColor="Gray">
+<ContentPage x:Class="XFNavigation.Views.PushPop.ModalPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="#ECF0F1">
 
-    <StackLayout HorizontalOptions="Center" Orientation="Vertical" Padding="10" Spacing="10" VerticalOptions="Center">
+    <StackLayout HorizontalOptions="Center"
+                 Orientation="Vertical"
+                 Padding="10"
+                 Spacing="10"
+                 VerticalOptions="Center">
         <Label HorizontalOptions="CenterAndExpand" Text="This is a Modal Page" />
         <Button x:Name="DismissModalButton" Clicked="DismissModalButton_OnClicked" Text="Pop This Modal" />
     </StackLayout>

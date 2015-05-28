@@ -19,7 +19,7 @@ namespace XFNavigation
         public App()
         {
             #region Simple Page Navigation Sample
-            //MainPage = new NavigationPage(new PushPage(1));
+            MainPage = new NavigationPage(new PushPage(1));
             #endregion
 
             #region ListViews with Navigation
@@ -34,9 +34,13 @@ namespace XFNavigation
             //MainPage = new BucketCarouselContainer();
             #endregion
 
+            #region Tabbed Pages (with Carousel)
+            MainPage = new TabbedPageWithCarousel();
+            #endregion
+
             #region Master Detail Page
             //MainPage = new SimpleMasterDetailContainer();
-            MainPage = new MasterDetailRoot();
+            //MainPage = new MasterDetailRoot();
             #endregion;
         }
 
