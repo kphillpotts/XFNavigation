@@ -10,31 +10,28 @@ namespace XFNavigation.Views.BucketList
             InitializeComponent();
             Title = "Bucket List";
 
-
-
-
-            Children.Add( new NavigationPage(new BucketListPage(BucketCategory.ThingsToDo))
-                {
-                    Title = "To Do", 
-                    Icon="ToDo.png"
-                });
-
-            Children.Add(new NavigationPage(new BucketListPage(BucketCategory.PlacesToVisit))
+            Children.Add(new NavigationPage(new BucketListPage(BucketCategory.ThingsToDo))
             {
-                Title = "To Visit",
-                Icon = "ToGo.png"
+                Title = "To Do",
+                Icon = "ThingsToDo.png"
+            });
+
+            Children.Add(new NavigationPage(new BucketListPage(BucketCategory.PlacesToGo))
+            {
+                Title = "To Go",
+                Icon = "PlacesToGo.png"
             });
 
             Children.Add(new NavigationPage(new BucketListPage(BucketCategory.BooksToRead))
             {
                 Title = "To Read",
-                Icon = "ToRead.png"
+                Icon = "BooksToRead.png"
             });
 
-            Children.Add(new NavigationPage(new BucketListPage(BucketCategory.MoviesToSee))
+            Children.Add(new NavigationPage(new BucketListPage(BucketCategory.MoviesToWatch))
             {
                 Title = "To See",
-                Icon = "ToWatch.png"
+                Icon = "MoviesToWatch.png"
             });
         }
     }

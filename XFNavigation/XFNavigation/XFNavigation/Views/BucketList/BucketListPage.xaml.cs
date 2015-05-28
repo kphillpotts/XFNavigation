@@ -40,11 +40,11 @@ namespace XFNavigation.Views.BucketList
             {
                 case BucketCategory.ThingsToDo:
                     return "Things To Do";
-                case BucketCategory.PlacesToVisit:
-                    return "Places To Visit";
+                case BucketCategory.PlacesToGo:
+                    return "Places To Go";
                 case BucketCategory.BooksToRead:
                     return "Books To Read";
-                case BucketCategory.MoviesToSee:
+                case BucketCategory.MoviesToWatch:
                     return "Movies To See";
                 default:
                     return "By Category";

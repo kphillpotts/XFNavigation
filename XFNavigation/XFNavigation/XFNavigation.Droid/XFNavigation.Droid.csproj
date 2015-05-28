@@ -88,6 +88,10 @@
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
     <AndroidResource Include="Resources\drawable\Hamburger.png" />
+    <AndroidResource Include="Resources\drawable\BooksToRead.png" />
+    <AndroidResource Include="Resources\drawable\MoviesToWatch.png" />
+    <AndroidResource Include="Resources\drawable\PlacesToGo.png" />
+    <AndroidResource Include="Resources\drawable\ThingsToDo.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XFNavigation\XFNavigation.csproj">

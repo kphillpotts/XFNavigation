@@ -29,7 +29,7 @@ namespace XFNavigation.Data
                     Name = "Visit Japan",
                     BucketImageUrl = "Japan.png",
                     Description = "Because it's a wacky place",
-                    Category = BucketCategory.PlacesToVisit,
+                    Category = BucketCategory.PlacesToGo,
                     Done = false
                 },
                 new BucketItem
@@ -37,7 +37,7 @@ namespace XFNavigation.Data
                     Name = "Visit the Moon",
                     BucketImageUrl = "moon.png",
                     Description = "Just like Tin-Tin did",
-                    Category = BucketCategory.PlacesToVisit,
+                    Category = BucketCategory.PlacesToGo,
                     Done = false
                 }
             };

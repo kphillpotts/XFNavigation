@@ -3,9 +3,9 @@
     public enum BucketCategory
     {
         ThingsToDo = 0,
-        PlacesToVisit = 1,
+        PlacesToGo = 1,
         BooksToRead = 2,
-        MoviesToSee = 3
+        MoviesToWatch = 3
     }
 }
 

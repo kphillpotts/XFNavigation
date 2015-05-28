@@ -14,31 +14,31 @@ namespace XFNavigation.Data
             MenuListItems = new ObservableCollection<MenuItem>();
 
             MenuListItems.Add (new MenuItem () { 
-                Title = "Things", 
-                IconSource = "Lead.png", 
+                Title = "Things To Do", 
+                IconSource = "ThingsToDo.png", 
                 TargetType = typeof(BucketListPage),
                 Category = BucketCategory.ThingsToDo
             });
 
             MenuListItems.Add (new MenuItem () { 
-                Title = "Places", 
-                IconSource = "Accounts.png", 
+                Title = "Places To Go", 
+                IconSource = "PlacesToGo.png", 
                 TargetType = typeof(BucketListPage),
-                Category = BucketCategory.PlacesToVisit
+                Category = BucketCategory.PlacesToGo
             });
 
             MenuListItems.Add (new MenuItem () { 
-                Title = "Books", 
-                IconSource = "Accounts.png", 
+                Title = "Books To Read", 
+                IconSource = "BooksToRead.png", 
                 TargetType = typeof(BucketListPage),
                 Category = BucketCategory.BooksToRead
             });
 
             MenuListItems.Add (new MenuItem () {
-                Title = "Movies",
-                IconSource = "Opportunity.png",
+                Title = "Movies To Watch",
+                IconSource = "MoviesToWatch.png",
                 TargetType = typeof(BucketListPage),
-                Category = BucketCategory.MoviesToSee
+                Category = BucketCategory.MoviesToWatch
             });
         }
     }
