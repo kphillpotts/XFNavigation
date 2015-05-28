@@ -1,5 +1,4 @@
 ﻿using System;
-using NavigationPatterns;
 using Xamarin.Forms;
 using XFNavigation.Views.BucketList;
 using MenuItem = XFNavigation.Views.MasterDetail.MenuItem;

@@ -8,6 +8,7 @@ using Xamarin.Forms;
 using XFNavigation.Data;
 using XFNavigation.Views.BucketList;
 using XFNavigation.Views.MasterDetail;
+using XFNavigation.Views.MasterDetail.SimpleMasterDetail;
 using XFNavigation.Views.PushPop;
 
 namespace XFNavigation
@@ -33,7 +34,8 @@ namespace XFNavigation
             #endregion
 
             #region Master Detail Page
-            MainPage = new MasterDetailRoot();
+            MainPage = new SimpleMasterDetailContainer();
+            //MainPage = new MasterDetailRoot();
             #endregion;
         }
 

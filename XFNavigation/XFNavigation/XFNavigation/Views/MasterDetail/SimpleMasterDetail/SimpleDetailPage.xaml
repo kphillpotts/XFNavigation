@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="XFNavigation.Views.MasterDetail.SimpleMasterDetail.SimpleDetailPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Detail"
+             BackgroundColor="#ECF0F1">
+
+    <Label HorizontalOptions="Center"
+           Text="Detail Page"
+           TextColor="Gray"
+           VerticalOptions="Center" />
+
+</ContentPage>

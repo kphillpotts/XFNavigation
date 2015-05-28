@@ -11,6 +11,8 @@ namespace XFNavigation.Views.BucketList
             Title = "Bucket List";
 
 
+
+
             Children.Add( new NavigationPage(new BucketListPage(BucketCategory.ThingsToDo))
                 {
                     Title = "To Do", 

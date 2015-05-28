@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
-using NavigationPatterns;
+using System.Linq;
 using Xamarin.Forms;
+using XFNavigation.Data;
 
 namespace XFNavigation.Views.MasterDetail
 {
@@ -8,7 +9,7 @@ namespace XFNavigation.Views.MasterDetail
     {
         public MenuListView ()
         {
-            List<MenuItem> data = new MenuListData ();
+            List<MenuItem> data = MenuListData.MenuListItems.ToList();
 
             ItemsSource = data;
             VerticalOptions = LayoutOptions.FillAndExpand;
