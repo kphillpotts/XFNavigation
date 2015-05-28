@@ -1,9 +1,9 @@
 ﻿using System;
 using Xamarin.Forms;
 using XFNavigation.Views.BucketList;
-using MenuItem = XFNavigation.Views.MasterDetail.MenuItem;
+using MenuItem = XFNavigation.Data.MenuItem;
 
-namespace XFNavigation.Views.MasterDetail
+namespace XFNavigation.Views.MasterDetail.FunctionalMasterDetail
 {
     public class MasterDetailRoot : MasterDetailPage
     {

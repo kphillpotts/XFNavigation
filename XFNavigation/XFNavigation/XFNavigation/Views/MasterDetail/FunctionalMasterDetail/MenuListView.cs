@@ -2,8 +2,9 @@
 using System.Linq;
 using Xamarin.Forms;
 using XFNavigation.Data;
+using MenuItem = XFNavigation.Data.MenuItem;
 
-namespace XFNavigation.Views.MasterDetail
+namespace XFNavigation.Views.MasterDetail.FunctionalMasterDetail
 {
     public class MenuListView : ListView
     {

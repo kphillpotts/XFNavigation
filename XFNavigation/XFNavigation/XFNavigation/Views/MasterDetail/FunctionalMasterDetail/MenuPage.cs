@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace XFNavigation.Views.MasterDetail
+namespace XFNavigation.Views.MasterDetail.FunctionalMasterDetail
 {
     public class MenuPage : ContentPage
     {

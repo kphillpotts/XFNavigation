@@ -55,11 +55,11 @@
     <Compile Include="Views\ColourPage.xaml.cs">
       <DependentUpon>ColourPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\MasterDetail\MasterDetailRoot.cs" />
-    <Compile Include="Views\MasterDetail\MenuItem.cs" />
+    <Compile Include="Views\MasterDetail\FunctionalMasterDetail\MasterDetailRoot.cs" />
+    <Compile Include="Data\MenuItem.cs" />
     <Compile Include="Data\MenuListData.cs" />
-    <Compile Include="Views\MasterDetail\MenuListView.cs" />
-    <Compile Include="Views\MasterDetail\MenuPage.cs" />
+    <Compile Include="Views\MasterDetail\FunctionalMasterDetail\MenuListView.cs" />
+    <Compile Include="Views\MasterDetail\FunctionalMasterDetail\MenuPage.cs" />
     <Compile Include="Views\MasterDetail\SimpleMasterDetail\SimpleDetailPage.xaml.cs">
       <DependentUpon>SimpleDetailPage.xaml</DependentUpon>
     </Compile>

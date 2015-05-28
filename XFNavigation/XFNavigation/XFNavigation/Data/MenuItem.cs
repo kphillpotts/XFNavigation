@@ -1,7 +1,6 @@
 ﻿using System;
-using XFNavigation.Data;
 
-namespace XFNavigation.Views.MasterDetail
+namespace XFNavigation.Data
 {
     public class MenuItem
     {
