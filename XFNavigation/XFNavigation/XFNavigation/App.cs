@@ -7,6 +7,7 @@ using System.Text;
 using Xamarin.Forms;
 using XFNavigation.Data;
 using XFNavigation.Views.BucketList;
+using XFNavigation.Views.MasterDetail;
 using XFNavigation.Views.PushPop;
 
 namespace XFNavigation
@@ -28,9 +29,12 @@ namespace XFNavigation
             #endregion
 
             #region Carousel Page
-            MainPage = new BucketCarouselContainer();
+            //MainPage = new BucketCarouselContainer();
             #endregion
 
+            #region Master Detail Page
+            MainPage = new MasterDetailRoot();
+            #endregion;
         }
 
         void Current_ModalPopping(object sender, ModalPoppingEventArgs e)
