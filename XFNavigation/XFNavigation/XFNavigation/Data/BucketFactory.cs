@@ -12,7 +12,7 @@ namespace XFNavigation.Data
                 {
                     Name = "Dinner with David Attenborough",
                     BucketImageUrl = "David.png",
-                    Description = "Dinner with David Attenborough",
+                    Description = "Because he is awesome",
                     Category = BucketCategory.ThingsToDo,
                     Done = false
                 },
@@ -28,7 +28,7 @@ namespace XFNavigation.Data
                 {
                     Name = "Visit Japan",
                     BucketImageUrl = "Japan.png",
-                    Description = "Because it's a wacky place",
+                    Description = "If it's good enough for Godzilla",
                     Category = BucketCategory.PlacesToGo,
                     Done = false
                 },
@@ -36,10 +36,87 @@ namespace XFNavigation.Data
                 {
                     Name = "Visit the Moon",
                     BucketImageUrl = "moon.png",
-                    Description = "Just like Tin-Tin did",
+                    Description = "I'm a rocket man",
                     Category = BucketCategory.PlacesToGo,
                     Done = false
+                }          ,
+                new BucketItem
+                {
+                    Name = "Code Complete",
+                    BucketImageUrl = "CodeComplete.png",
+                    Description = "Everyone needs to read this",
+                    Category = BucketCategory.BooksToRead,
+                    Done = false
+                },
+  
+                new BucketItem
+                {
+                    Name = "Feelings and how to destroy them",
+                    BucketImageUrl = "Feelings.png",
+                    Description = "Why not",
+                    Category = BucketCategory.BooksToRead,
+                    Done = false
+                },
+                new BucketItem
+                {
+                    Name = "Finding Emo",
+                    BucketImageUrl = "FindingEmo.png",
+                    Description = "A modern tale",
+                    Category = BucketCategory.MoviesToWatch,
+                    Done = false
+                },
+                new BucketItem
+                {
+                    Name = "Great Wall of China",
+                    BucketImageUrl = "GreatWallOfChina.png",
+                    Description = "Because you can see it from the moon",
+                    Category = BucketCategory.PlacesToGo,
+                    Done = false
+                },
+                new BucketItem
+                {
+                    Name = "Jet Boarding",
+                    BucketImageUrl = "JetBoarding.png",
+                    Description = "The right amount of crazy",
+                    Category = BucketCategory.ThingsToDo,
+                    Done = false
+                },
+                new BucketItem
+                {
+                    Name = "Mad Max Road Warrior",
+                    BucketImageUrl = "MadMax.png",
+                    Description = "What a trip!",
+                    Category = BucketCategory.MoviesToWatch,
+                    Done = true
+                },
+                new BucketItem
+                {
+                    Name = "My First Cavity Search",
+                    BucketImageUrl = "MyFirstCavitySearch.png",
+                    Description = "Welcome to the new world",
+                    Category = BucketCategory.BooksToRead,
+                    Done = true
+                },
+               new BucketItem
+                {
+                    Name = "Creating Mobile Apps with Xamarin.Forms",
+                    BucketImageUrl = "Petzold.png",
+                    Description = "Petzold is a legend.",
+                    Category = BucketCategory.BooksToRead,
+                    Done = true
+                },
+   
+                             new BucketItem
+                {
+                    Name = "Star Wars - the new one",
+                    BucketImageUrl = "StarWars.png",
+                    Description = "Plesae be good.",
+                    Category = BucketCategory.MoviesToWatch,
+                    Done = true
                 }
+ 
+            
+            
             };
 
 //            BucketList = new ObservableCollection<BucketItem> {

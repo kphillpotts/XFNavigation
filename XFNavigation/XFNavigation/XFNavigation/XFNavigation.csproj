@@ -145,6 +145,17 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\CodeComplete.png" />
+    <EmbeddedResource Include="Images\Feelings.png" />
+    <EmbeddedResource Include="Images\FindingEmo.png" />
+    <EmbeddedResource Include="Images\GreatWallOfChina.png" />
+    <EmbeddedResource Include="Images\JetBoarding.png" />
+    <EmbeddedResource Include="Images\MadMax.png" />
+    <EmbeddedResource Include="Images\MyFirstCavitySearch.png" />
+    <EmbeddedResource Include="Images\Petzold.png" />
+    <EmbeddedResource Include="Images\StarWars.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.1.4.2.6359\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.1.4.2.6359\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

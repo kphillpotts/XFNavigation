@@ -35,7 +35,7 @@ namespace XFNavigation
             #endregion
 
             #region Tabbed Pages (with Carousel)
-            MainPage = new TabbedPageWithCarousel();
+            //MainPage = new TabbedPageWithCarousel();
             #endregion
 
             #region Master Detail Page

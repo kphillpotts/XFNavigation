@@ -14,6 +14,8 @@ namespace XFNavigation.Views.PushPop
             Title = string.Format("Page {0}", _pageNumber);
             PageTitleLabel.Text = Title;
 
+           // NavigationPage.SetTitleIcon(this, "BucketLogo.png");
+
             //// change background colour depending on page number
             //var delta = 255 - (_pageNumber*5);
             //this.BackgroundColor = Color.FromRgb(delta, delta, delta);
